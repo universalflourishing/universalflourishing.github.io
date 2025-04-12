@@ -14,6 +14,7 @@
             --dark-text-on-light: #333333; /* Dark text (for light boxes if needed) */
             --border-color: #2a1f3a; /* Darker border color - slightly lighter than new BG */
             --box-bg: #1c102c; /* Slightly lighter dark bg for contrast boxes */
+            --link-color: var(--vibrant-purple); /* Link color variable */
         }
 
         body {
@@ -21,20 +22,20 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: var(--dark-bg); /* USE NEW DARK BG */
-            color: var(--light-text); /* SET DEFAULT TEXT LIGHT */
+            background-color: var(--dark-bg);
+            color: var(--light-text);
         }
         .container {
             max-width: 900px;
             margin: 20px auto;
             padding: 0;
-            background-color: var(--dark-bg); /* Match body background */
-            box-shadow: 0 0 15px rgba(147, 112, 219, 0.2); /* Optional subtle glow */
+            background-color: var(--dark-bg);
+            box-shadow: 0 0 15px rgba(147, 112, 219, 0.2);
         }
         header {
             text-align: center;
             padding: 30px 20px 15px 20px;
-            border-bottom: 2px solid var(--vibrant-purple); /* Use lighter accent purple */
+            border-bottom: 2px solid var(--vibrant-purple);
             margin-bottom: 0;
         }
         .logo-img {
@@ -44,12 +45,12 @@
             margin: 0 auto 15px auto;
         }
         header h1 {
-            color: var(--heading-purple); /* Use lighter heading purple */
+            color: var(--heading-purple);
             margin-bottom: 0.2em;
             font-size: 2em;
         }
         header .tagline {
-            color: var(--light-text); /* Use light text */
+            color: var(--light-text);
             font-size: 1.1em;
             font-weight: normal;
             margin-top: 5px;
@@ -57,41 +58,40 @@
         nav {
             text-align: center;
             margin-bottom: 30px;
-            background-color: var(--dark-bg); /* Match background */
+            background-color: var(--dark-bg);
             padding: 15px 0;
-            border-bottom: 1px solid var(--border-color); /* Use adjusted dark border */
+            border-bottom: 1px solid var(--border-color);
         }
         nav ul { list-style: none; padding: 0; margin: 0; }
         nav ul li { display: inline-block; margin: 0 15px; }
         nav ul li a {
             text-decoration: none;
-            color: var(--vibrant-purple); /* Use lighter accent purple */
+            color: var(--link-color);
             font-weight: bold;
             padding: 5px 0;
         }
         nav ul li a:hover {
             text-decoration: underline;
-            color: var(--light-text); /* Hover color */
+            color: var(--light-text);
         }
 
-        section { margin-bottom: 30px; padding: 10px 20px 20px 20px; border-bottom: 1px solid var(--border-color); } /* Use adjusted dark border */
+        section { margin-bottom: 30px; padding: 10px 20px 20px 20px; border-bottom: 1px solid var(--border-color); }
         section:last-of-type { border-bottom: none; margin-bottom: 0; }
 
         h2 {
-            color: var(--heading-purple); /* Use lighter heading purple */
-            border-bottom: 1px solid var(--border-color); /* Use adjusted dark border */
+            color: var(--heading-purple);
+            border-bottom: 1px solid var(--border-color);
             padding-bottom: 8px;
             margin-bottom: 15px;
             font-size: 1.6em;
         }
         blockquote {
-            border-left: 4px solid var(--vibrant-purple); /* Use lighter accent purple */
+            border-left: 4px solid var(--vibrant-purple);
             margin-left: 0;
             padding-left: 15px;
             font-style: italic;
-            color: #cccccc; /* Lighter grey for quote text */
+            color: #cccccc;
         }
-        /* Styling for lists within content */
         section ul, section ol {
             margin-left: 20px;
             padding-left: 20px;
@@ -99,15 +99,21 @@
         section li {
             margin-bottom: 0.8em;
         }
-        /* Styling for bold text */
         strong {
-             color: var(--light-text); /* Ensure contrast */
+             color: var(--light-text);
              font-weight: bold;
+        }
+        /* General link styling */
+        a {
+             color: var(--link-color);
+        }
+        a:hover {
+             color: var(--light-text);
         }
 
 
         .get-involved {
-            background-color: var(--box-bg); /* Use box background color */
+            background-color: var(--box-bg);
             padding: 20px;
             border-radius: 5px;
             text-align: center;
@@ -115,23 +121,40 @@
             margin-bottom: 0;
         }
         .get-involved h2 { border: none; color: var(--heading-purple); }
-        .get-involved p { color: var(--light-text); } /* Ensure text is light */
+        .get-involved p { color: var(--light-text); }
+        /* Specific styling for the join button link */
+        .join-button {
+             display: inline-block;
+             padding: 10px 20px;
+             margin-top: 15px;
+             background-color: var(--vibrant-purple);
+             color: var(--dark-bg); /* Dark text on button */
+             font-weight: bold;
+             text-decoration: none;
+             border-radius: 5px;
+             transition: background-color 0.2s ease;
+        }
+        .join-button:hover {
+             background-color: var(--heading-purple); /* Lighter purple on hover */
+             color: var(--dark-bg);
+             text-decoration: none;
+        }
+
 
         footer {
             text-align: center;
             margin-top: 0;
             padding: 20px;
-            background-color: var(--dark-bg); /* Match body bg */
-            color: #a0a0a0; /* Slightly dimmer light text for footer */
+            background-color: var(--dark-bg);
+            color: #a0a0a0;
             font-size: 0.9em;
-            border-top: 1px solid var(--border-color); /* Use adjusted dark border */
+            border-top: 1px solid var(--border-color);
         }
         footer p { margin: 0; }
 
         @media (max-width: 600px) {
-            /* Responsive styles... */
             nav ul li { display: block; margin: 10px 0; }
-            .container { margin: 0; box-shadow: none; border: none; } /* Remove border/shadow on mobile */
+            .container { margin: 0; box-shadow: none; border: none; }
             header h1 { font-size: 1.8em; }
             header .tagline { font-size: 1em; }
             h2 { font-size: 1.4em; }
@@ -144,7 +167,6 @@
     <div class="container">
 
         <header>
-            <!-- Make sure 'ufi-logo.png' is the refined version with outlines -->
             <img src="ufi-logo.png" alt="Universal Flourishing Initiative Logo" class="logo-img">
             <h1>Universal Flourishing Initiative</h1>
             <p class="tagline">A thriving future for all.</p>
@@ -160,11 +182,10 @@
             </ul>
         </nav>
 
-        <!-- === REVISED About Section === -->
+        <!-- === About Section === -->
         <section id="about">
             <h2>About the Universal Flourishing Initiative</h2>
             <p>Welcome to the Universal Flourishing Initiative (UFI). We are founded on the recognition of the inherent dignity and potential within every human being. We believe a better, more equitable world is not just possible, but necessary – one where everyone has the opportunity and the resources to truly thrive.</p>
-            <!-- Updated Logo Description -->
             <p>Our primary symbol features an infinity sign interwoven with two supporting bands, representing the essential connection between boundless potential and grounded action, or the interplay between universal principles and tangible reality. Complementing this, our secondary 'seed of flourishing' symbol signifies growth, emergence, and the nurturing of potential within individuals and communities. Together, they represent our commitment to creating the conditions for universal flourishing: a world of well-being, fairness, and meaningful freedom for all, living in harmony with our planet.</p>
             <p>Join us in exploring and building this thriving future together.</p>
         </section>
@@ -189,7 +210,7 @@
             </ul>
         </section>
 
-        <!-- === Manifesto Section (Revised Principle #3) === -->
+        <!-- === Manifesto Section === -->
         <section id="manifesto">
             <h2>Manifesto for Human Flourishing and Collective Liberation</h2>
             <p><em>This manifesto details the core beliefs, commitments, and resolve driving the Universal Flourishing Initiative. It represents a deeper dive into the principles that guide us:</em></p>
@@ -221,29 +242,26 @@
             <p><strong>This is Our Resolve:</strong> The path towards universal flourishing and collective liberation is not a utopian dream, but a necessary journey. It requires courage, resilience, solidarity, and an unwavering belief in the potential held within each of us. We choose this path. We invite you to join us in building a world where abundance and freedom are not distant ideals, but the lived reality – <strong>of all, for all.</strong></p>
 
         </section>
-        <!-- ================================================ -->
+        <!-- ============================= -->
 
+        <!-- === REVISED Get Involved Section === -->
         <section id="involved" class="get-involved">
              <h2>Join Us in Building a Thriving Future</h2>
              <p>The Universal Flourishing Initiative is just beginning. Be part of building a movement towards a world where everyone can thrive.</p>
-             <p><strong>Stay Connected:</strong> Join our mailing list to receive updates, share ideas, and connect with others who believe in this vision:</p>
+             <p><strong>Stay Connected:</strong> Join our Google Group mailing list to receive updates and participate in discussions (if enabled):</p>
 
-             <!-- === EMAIL SIGNUP FORM PLACEHOLDER === -->
-             <div style="border: 1px dashed var(--border-color); padding: 15px; margin: 15px auto; max-width: 400px; text-align: center; background-color: var(--box-bg); border-radius: 5px;">
-                 <p><strong>[ Email Signup Form Embed Code Goes Here ]</strong></p>
-                 <p style="font-size: 0.9em; color: #bbbbbb;">(Requires integration with an email service provider)</p>
-                 <form>
-                     <input type="email" placeholder="Enter your email" disabled style="padding: 8px; margin-right: 5px; width: 60%; background-color: #fff; color: #333; border: 1px solid var(--border-color); border-radius: 3px;">
-                     <button type="submit" disabled style="padding: 8px 12px; background-color: var(--vibrant-purple); color: var(--dark-bg); border: none; border-radius: 3px; cursor: pointer; font-weight: bold;">Subscribe</button>
-                 </form>
-             </div>
-             <!-- === END PLACEHOLDER === -->
+             <!-- Link to Google Group -->
+             <a href="https://groups.google.com/g/universalflourishing" target="_blank" class="join-button">Join the UFI Community Mailing List</a>
 
-             <p>Follow our journey and share your thoughts using #UniversalFlourishing (social media links coming soon).</p>
+             <p style="font-size: 0.9em; color: #bbbbbb; margin-top: 15px;">(This link will take you to our Google Groups page where you can request to join)</p>
+             <!-- End Link -->
+
+             <p style="margin-top: 25px;">Follow our journey and share your thoughts using #UniversalFlourishing (social media links coming soon).</p>
         </section>
+        <!-- ================================ -->
 
         <footer>
-            <p>© 2024 Universal Flourishing Initiative | A thriving future for all.</p>
+            <p>© 2025 Universal Flourishing Initiative | A thriving future for all.</p>
         </footer>
 
     </div> <!-- end .container -->
