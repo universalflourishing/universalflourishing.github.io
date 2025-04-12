@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Flourishing Initiative - A thriving future for all</title>
+    <style>
+        /* Define Brand Colors */
+        :root {
+            --dark-bg: #060213; /* Updated dark background */
+            --vibrant-purple: #9370DB; /* Lighter Purple for accents on dark BG */
+            --heading-purple: #BDA0E8; /* Even lighter for headings */
+            --light-text: #F0F0F0; /* Light text for readability */
+            --dark-text-on-light: #333333; /* Dark text (for light boxes if needed) */
+            --border-color: #2a1f3a; /* Darker border color - slightly lighter than new BG */
+            --box-bg: #1c102c; /* Slightly lighter dark bg for contrast boxes */
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg); /* USE NEW DARK BG */
+            color: var(--light-text); /* SET DEFAULT TEXT LIGHT */
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0;
+            background-color: var(--dark-bg); /* Match body background */
+            box-shadow: 0 0 15px rgba(147, 112, 219, 0.2); /* Optional subtle glow */
+        }
+        header {
+            text-align: center;
+            padding: 30px 20px 15px 20px;
+            border-bottom: 2px solid var(--vibrant-purple); /* Use lighter accent purple */
+            margin-bottom: 0;
+        }
+        .logo-img {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+        header h1 {
+            color: var(--heading-purple); /* Use lighter heading purple */
+            margin-bottom: 0.2em;
+            font-size: 2em;
+        }
+        header .tagline {
+            color: var(--light-text); /* Use light text */
+            font-size: 1.1em;
+            font-weight: normal;
+            margin-top: 5px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: var(--dark-bg); /* Match background */
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color); /* Use adjusted dark border */
+        }
+        nav ul { list-style: none; padding: 0; margin: 0; }
+        nav ul li { display: inline-block; margin: 0 15px; }
+        nav ul li a {
+            text-decoration: none;
+            color: var(--vibrant-purple); /* Use lighter accent purple */
+            font-weight: bold;
+            padding: 5px 0;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: var(--light-text); /* Hover color */
+        }
+
+        section { margin-bottom: 30px; padding: 10px 20px 20px 20px; border-bottom: 1px solid var(--border-color); } /* Use adjusted dark border */
+        section:last-of-type { border-bottom: none; margin-bottom: 0; }
+
+        h2 {
+            color: var(--heading-purple); /* Use lighter heading purple */
+            border-bottom: 1px solid var(--border-color); /* Use adjusted dark border */
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+        blockquote {
+            border-left: 4px solid var(--vibrant-purple); /* Use lighter accent purple */
+            margin-left: 0;
+            padding-left: 15px;
+            font-style: italic;
+            color: #cccccc; /* Lighter grey for quote text */
+        }
+        /* Styling for lists within content */
+        section ul, section ol {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+        section li {
+            margin-bottom: 0.8em;
+        }
+        /* Styling for bold text */
+        strong {
+             color: var(--light-text); /* Ensure contrast */
+             font-weight: bold;
+        }
+
+
+        .get-involved {
+            background-color: var(--box-bg); /* Use box background color */
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .get-involved h2 { border: none; color: var(--heading-purple); }
+        .get-involved p { color: var(--light-text); } /* Ensure text is light */
+
+        footer {
+            text-align: center;
+            margin-top: 0;
+            padding: 20px;
+            background-color: var(--dark-bg); /* Match body bg */
+            color: #a0a0a0; /* Slightly dimmer light text for footer */
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color); /* Use adjusted dark border */
+        }
+        footer p { margin: 0; }
+
+        @media (max-width: 600px) {
+            /* Responsive styles... */
+            nav ul li { display: block; margin: 10px 0; }
+            .container { margin: 0; box-shadow: none; border: none; } /* Remove border/shadow on mobile */
+            header h1 { font-size: 1.8em; }
+            header .tagline { font-size: 1em; }
+            h2 { font-size: 1.4em; }
+            .logo-img { max-width: 80px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <!-- Make sure 'ufi-logo.png' is the refined version with outlines -->
+            <img src="ufi-logo.png" alt="Universal Flourishing Initiative Logo" class="logo-img">
+            <h1>Universal Flourishing Initiative</h1>
+            <p class="tagline">A thriving future for all.</p>
+        </header>
+
+        <nav>
+             <ul>
+                <li><a href="#about">About UFI</a></li>
+                <li><a href="#principle">Our Principle</a></li>
+                <li><a href="#vision">Our Vision</a></li>
+                <li><a href="#manifesto">Manifesto</a></li>
+                <li><a href="#involved">Get Involved</a></li>
+            </ul>
+        </nav>
+
+        <!-- === REVISED About Section === -->
+        <section id="about">
+            <h2>About the Universal Flourishing Initiative</h2>
+            <p>Welcome to the Universal Flourishing Initiative (UFI). We are founded on the recognition of the inherent dignity and potential within every human being. We believe a better, more equitable world is not just possible, but necessary – one where everyone has the opportunity and the resources to truly thrive.</p>
+            <!-- Updated Logo Description -->
+            <p>Our primary symbol features an infinity sign interwoven with two supporting bands, representing the essential connection between boundless potential and grounded action, or the interplay between universal principles and tangible reality. Complementing this, our secondary 'seed of flourishing' symbol signifies growth, emergence, and the nurturing of potential within individuals and communities. Together, they represent our commitment to creating the conditions for universal flourishing: a world of well-being, fairness, and meaningful freedom for all, living in harmony with our planet.</p>
+            <p>Join us in exploring and building this thriving future together.</p>
+        </section>
+        <!-- ========================== -->
+
+        <section id="principle">
+            <h2>Our Guiding Principle</h2>
+            <blockquote>
+                Recognize the inherent dignity and potential in every person, and act ethically to foster the conditions for universal flourishing, equity, and self-determination.
+            </blockquote>
+            <p>This principle serves as the ethical compass for all UFI endeavors. It affirms the non-negotiable value of every individual and commits us to proactively working towards the societal conditions necessary for well-being, fairness, and freedom to become a universal reality.</p>
+        </section>
+
+        <section id="vision">
+            <h2>Our Vision: Conditions for Thriving</h2>
+            <p>To realize a thriving future for all, we work towards creating a world where:</p>
+            <ul>
+                <li><strong>Basic Needs Security is Universal:</strong> Secure housing, nourishing food, comprehensive healthcare, clean water, and physical safety are guaranteed human rights, accessible to everyone, everywhere.</li>
+                <li><strong>Meaningful Opportunities are Accessible to All:</strong> Quality education empowers critical thinking and creativity; work offers dignity, purpose, and fair reward; and full participation in civic, cultural, and economic life is open to everyone without systemic barriers.</li>
+                <li><strong>Systems Actively Uphold Equity and Freedom:</strong> Institutions are transparent, accountable, and intentionally designed to dismantle oppression, promote justice, protect fundamental freedoms (like speech, belief, movement, and choice), empower communities, and foster ecological regeneration for a healthy planet.</li>
+                <li><strong>Individual and Collective Well-being Flourishes:</strong> Societies prioritize not just economic output, but the holistic health, happiness, growth, connection, and self-determination of all people.</li>
+            </ul>
+        </section>
+
+        <!-- === Manifesto Section (Revised Principle #3) === -->
+        <section id="manifesto">
+            <h2>Manifesto for Human Flourishing and Collective Liberation</h2>
+            <p><em>This manifesto details the core beliefs, commitments, and resolve driving the Universal Flourishing Initiative. It represents a deeper dive into the principles that guide us:</em></p>
+
+            <p><strong>We Begin with Truth:</strong> Every human being possesses inherent dignity and boundless potential. This is not a gift bestowed by status, wealth, or power, nor a privilege to be earned. It is the fundamental reality of our shared existence.</p>
+
+            <p><strong>We See the Present:</strong> Yet, we witness a world scarred by systems that deny this truth. Systems built on scarcity, exclusion, and control actively diminish potential, constrain freedom, and perpetuate cycles of insecurity and inequity. They pit us against each other and estrange us from our planet, the very source of our sustenance. We reject the normalization of this injustice. We refuse to accept that suffering, limitation, and oppression are inevitable.</p>
+
+            <p><strong>We Affirm Our Principles:</strong> Therefore, we ground ourselves in these unwavering commitments:</p>
+            <ol>
+                <li><strong>Inherent Dignity:</strong> We will recognize, respect, and fiercely defend the non-negotiable worth of every single person, in every action we take and every structure we build.</li>
+                <li><strong>Universal Flourishing:</strong> We believe life is more than survival. We strive for a world where all people have the conditions necessary to thrive – to learn, grow, create, connect, and experience well-being in its fullest sense. This is the true meaning of abundance.</li>
+                <li><strong>Radical Equity:</strong> We demand fairness not as an afterthought, but as a design principle. We commit to identifying and dismantling systems of oppression – racism, sexism, classism, ableism, and all forms of discrimination – and building structures that ensure equitable access to resources, power, and opportunities for all. Achieving this equity is the foundation of 'for all.'</li>
+                <li><strong>Meaningful Self-Determination:</strong> We champion the fundamental right of individuals and communities to shape their own lives, make their own choices, and determine their own futures, free from coercion and systemic constraint. This is the essence of freedom.</li>
+                <li><strong>Interdependence & Planetary Health:</strong> We acknowledge our profound connection to each other and to the living Earth. Our liberation is bound together. Our future depends on regenerating, not merely sustaining, the health of our shared planet.</li>
+            </ol>
+
+            <p><strong>We Envision the Future:</strong> Guided by these principles, we work towards a world where Basic Needs are Met Universally, Opportunity is Accessible & Meaningful, Systems Serve Humanity & Planet, and Connection Replaces Division.</p>
+
+            <p><strong>We Commit to Action:</strong> This vision demands more than hope; it demands work. We commit to:</p>
+            <ul>
+                <li>Living Ethically: Aligning our personal and collective actions with our stated principles.</li>
+                <li>Challenging Injustice: Speaking out against inequity and actively working to dismantle oppressive structures.</li>
+                <li>Building Alternatives: Creating and supporting models of living, working, and governing that embody fairness, sustainability, and shared well-being.</li>
+                <li>Empowering Voices: Centering the experiences and leadership of those most impacted by current systems of inequity.</li>
+                <li>Learning & Adapting: Remaining open, critical, and willing to evolve our understanding and strategies.</li>
+            </ul>
+
+            <p><strong>This is Our Resolve:</strong> The path towards universal flourishing and collective liberation is not a utopian dream, but a necessary journey. It requires courage, resilience, solidarity, and an unwavering belief in the potential held within each of us. We choose this path. We invite you to join us in building a world where abundance and freedom are not distant ideals, but the lived reality – <strong>of all, for all.</strong></p>
+
+        </section>
+        <!-- ================================================ -->
+
+        <section id="involved" class="get-involved">
+             <h2>Join Us in Building a Thriving Future</h2>
+             <p>The Universal Flourishing Initiative is just beginning. Be part of building a movement towards a world where everyone can thrive.</p>
+             <p><strong>Stay Connected:</strong> Join our mailing list to receive updates, share ideas, and connect with others who believe in this vision:</p>
+
+             <!-- === EMAIL SIGNUP FORM PLACEHOLDER === -->
+             <div style="border: 1px dashed var(--border-color); padding: 15px; margin: 15px auto; max-width: 400px; text-align: center; background-color: var(--box-bg); border-radius: 5px;">
+                 <p><strong>[ Email Signup Form Embed Code Goes Here ]</strong></p>
+                 <p style="font-size: 0.9em; color: #bbbbbb;">(Requires integration with an email service provider)</p>
+                 <form>
+                     <input type="email" placeholder="Enter your email" disabled style="padding: 8px; margin-right: 5px; width: 60%; background-color: #fff; color: #333; border: 1px solid var(--border-color); border-radius: 3px;">
+                     <button type="submit" disabled style="padding: 8px 12px; background-color: var(--vibrant-purple); color: var(--dark-bg); border: none; border-radius: 3px; cursor: pointer; font-weight: bold;">Subscribe</button>
+                 </form>
+             </div>
+             <!-- === END PLACEHOLDER === -->
+
+             <p>Follow our journey and share your thoughts using #UniversalFlourishing (social media links coming soon).</p>
+        </section>
+
+        <footer>
+            <p>© 2024 Universal Flourishing Initiative | A thriving future for all.</p>
+        </footer>
+
+    </div> <!-- end .container -->
+
+</body>
+</html>
